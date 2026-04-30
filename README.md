@@ -1,43 +1,62 @@
-# hwCamahack
-Grab cam shots from target's phone front camera or PC webcam just sending a link.
-![cheese](https://techchip.net/wp-content/uploads/2020/04/camphish.jpg)
+# HwCamahack
 
-# What is hwCamahack ?
-<p>hwCamahack is techniques to take cam shots of target's phone fornt camera or PC webcam. hwCamahack Hosts a fake website on in built PHP server and uses ngrok & serveo to generate a link which we will forward to the target, which can be used on over internet. website asks for camera permission and if the target allows it, this tool grab camshots of target's device</p>
+Grab cam shots from target's phone front camera or PC webcam just sending a link. 
 
-## Features
-<p>In this tool I added two automatic webpage templates for engaged target on webpage to get more picture of cam</p>
-<ul>
-  <li>Festival Wishing</li>
-  <li>Live YouTube TV</li>
-</ul>
-<p>simply enter festival name or youtube's video ID</p>
+### What is hwCamahack?
+hwCamahack is a technique to take cam shots of a target's phone front camera or PC webcam. hwCamahack hosts a fake website on an in-built PHP server and uses tunneling services to generate a link which we will forward to the target, which can be used over the internet. The website asks for camera permission and if the target allows it, this tool grabs camshots of the target's device.
 
-## This Tool Tested On :
-<ul>
-  <li>Kali Linux</li>
-  <li>Termux</li>
-  <li>MacOS</li>
-  <li>Ubuntu</li>
-  <li>Perrot Sec OS</li>
-</ul>
+### Features
+In this tool, I added two automatic webpage templates to engage the target on the webpage to get more pictures of the cam:
+* Festival Wishing
+* Live YouTube TV
 
-# Installing and requirements
-<p>This tool require PHP for webserver, SSH or serveo link. First run following command on your terminal</p>
+Simply enter the festival name or YouTube's video ID.
 
-```
-apt-get -y install php openssh git wget
-```
+### This Tool Tested On:
+* Kali Linux
+* Termux
+* MacOS
+* Ubuntu
+* Parrot Sec OS
 
-## Installing (Kali Linux/Termux):
+---
 
-```
-git clone https://github.com/baradatipu/CamPhish
-cd CamPhish
-bash camphish.sh
-```
+### Installing and Requirements (Termux)
+
+First, run the following commands step-by-step on your Termux terminal to install the required dependencies:
+
+`termux-setup-storage`
+`pkg update -y && pkg upgrade -y`
+`apt update && apt upgrade -y`
+`pkg install wget curl -y`
+`pkg install python -y`
+`pkg install openssh -y`
+`pkg install php -y`
+`pkg install git -y`
+`pkg install cloudflared -y`
+`pip install flask`
+`python -m pip install flask`
+`pip install colorama`
+`python -m pip install colorama`
+
+### Step 2: Clone and Run
+
+After installing the packages, clone the repository and start the tool:
+
+`git clone https://github.com/Hackerscolonyofficial/HCO-Cam-Tam.git`
+`ls`
+`cd HCO-Cam-Tam`
+`ls`
+`chmod +x *`
+`python main.py`
+
+---
+
 ### Video Demo
-[![How to control android camera](https://img.youtube.com/vi/G_nNHrWwCOM/0.jpg)](https://youtu.be/CmjnqF4Ov4Q)
-#### For More Video subcribe <a href="https://youtube.com/@hexcaweb2.0?si=H8aWK94nbfSW9rUe">HEXCA WEB YouTube Channel</a>
-<p>CamPhish is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
-<p>CamPhish is inspired by https://github.com/thelinuxchoice/ Big thanks to @thelinuxchoice</p>
+*(https://youtube.com/@hexcaweb2.0?si=osgqRo3QHtT8BtQ4)*
+
+For More Videos subscribe to **HEXCA WEB** YouTube Channel.
+
+**Disclaimer:** hwCamahack is created to help in penetration testing and is solely for educational purposes. The creator is not responsible for any misuse or illegal activities.
+
+*Inspired by https://github.com/thelinuxchoice/ - Big thanks to @thelinuxchoice*
